@@ -2,12 +2,13 @@
   transition: fill-opacity;
   transition-duration: 1s;
   cursor: pointer;
-  fill-opacity: 0.6;
-  stroke: #000;
+  fill-opacity: 0.9;
+  stroke: darkgray;
   stroke-width: 1;
 }
 .hex:hover {
   fill-opacity: 1;
+  stroke: black;
 }
 .forest{
   fill:url('#forest-bg');
