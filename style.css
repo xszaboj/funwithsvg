@@ -2,24 +2,33 @@
   transition: fill-opacity;
   transition-duration: 1s;
   cursor: pointer;
-  fill-opacity: 0.4;
+  fill-opacity: 0.6;
   stroke: #000;
   stroke-width: 1;
 }
 .hex:hover {
   fill-opacity: 1;
 }
-.green{
-  fill:green;
+.forest{
+  fill:url('#forest-bg');
 }
-.blue{
-  fill:url('#image-bg');
+.meadow{
+  fill:url('#meadow-bg');
 }
-.red{
-  fill: red;
+.mountains{
+  fill:url('#mountains-bg');
 }
-.yellow{
-  fill: yellow;
+.clay{
+  fill:url('#clay-bg');
+}
+.wheat{
+  fill:url('#wheat-bg');
+}
+.water{
+  fill:url('#water-bg');
+}
+.desert{
+  fill:url('#desert-bg');
 }
 .add{
   float: right;
