@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="main.js" ></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<svg id="color-fill" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000px" height="1000" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+     <pattern id="image-bg" x="0" y="0" height="140" width="160" patternUnits="userSpaceOnUse">
+       <image width="160" height="140" xlink:href="./images/rock.png"></image>
+    </pattern>
+  </defs>
+  
+  <polygon id="1" class="hex green" points="40,0 120,0 160,70 120,140 40,140 0,70" onmousedown="selectElement(evt)" transform="matrix(1 0 0 1 0 0)"
+ ></polygon>
+ 
+  <polygon id="2" class="hex blue" points="40,0 120,0 160,70 120,140 40,140 0,70" onmousedown="selectElement(evt)" transform="matrix(1 0 0 1 120 70)"
+ ></polygon>
+  
+</svg>
+<button id="add" class="add">Add</button>
+<select id="color">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+  <option value="yellow">Yellow</option>
+</select>
+<!-- polygon: x0,y0 is top left corner, if= a=80px=1 than r=0.866=70px (r=(1/2)cot(π/6)) -->
+    </body>
+</html>

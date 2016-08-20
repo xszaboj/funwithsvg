@@ -1,0 +1,30 @@
+.hex {
+  transition: fill-opacity;
+  transition-duration: 1s;
+  cursor: pointer;
+  fill-opacity: 0.4;
+  stroke: #000;
+  stroke-width: 1;
+}
+.hex:hover {
+  fill-opacity: 1;
+}
+.green{
+  fill:green;
+}
+.blue{
+  fill:url('#image-bg');
+}
+.red{
+  fill: red;
+}
+.yellow{
+  fill: yellow;
+}
+.add{
+  float: right;
+  height: 35px;
+}
+#color{
+  float: right;
+}
