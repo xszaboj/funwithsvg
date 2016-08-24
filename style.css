@@ -37,9 +37,6 @@ svg{
 .village{
   fill:url('#village-bg');
 }
-.red{
-  fill: red;
-}
 .add{
   height: 35px;
 }
