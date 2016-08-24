@@ -1,3 +1,6 @@
+svg{
+  background-color: aliceblue;
+}
 .hex {
   transition: fill-opacity;
   transition-duration: 1s;
@@ -32,9 +35,16 @@
   fill:url('#desert-bg');
 }
 .add{
-  float: right;
   height: 35px;
 }
-#color{
+.controls{
   float: right;
+}
+.line{
+  stroke: rgb(255,0,0);
+  stroke-width: 10px;
+  stroke-opacity: 0.6;
+}
+line:hover{
+  stroke-opacity: 1;
 }

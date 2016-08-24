@@ -67,17 +67,30 @@
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 372 774)" onmousedown="selectElement(evt)" class="hex water"></polygon>
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 252 704)" onmousedown="selectElement(evt)" class="hex water"></polygon>
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 724 281)" onmousedown="selectElement(evt)" class="hex water"></polygon>
+    <rect id="trash" x="850" y="50" width="50" height="50" stroke="black" fill="black" />
 </svg>
-<button id="add" class="add">Add</button>
-<select id="color">
-  <option value="mountains">mountains</option>
-  <option value="clay">clay</option>
-  <option value="wheat">wheat</option>
-  <option value="forest">forest</option>
-  <option value="meadow">meadow</option>
-  <option value="water">water</option>
-  <option value="desert">desert</option>
-</select>
+<div class="controls">
+    <div>
+        <button id="add" class="add">Add Hex</button>
+        <select id="color" class="choice">
+        <option value="mountains">mountains</option>
+        <option value="clay">clay</option>
+        <option value="wheat">wheat</option>
+        <option value="forest">forest</option>
+        <option value="meadow">meadow</option>
+        <option value="water">water</option>
+        <option value="desert">desert</option>
+        </select>
+    </div>
+    <div>
+        <button id="add-path" class="add">Add Path</button>
+        <select id="path" class="choice">
+        <option value="horizontal" >horizontal</option>
+        <option value="left" >left</option>
+        <option value="right">right</option>
+        </select>
+    </div>
+</div>
 <!-- polygon: x0,y0 is top left corner, if= a=80px=1 than r=0.866=70px (r=(1/2)cot(π/6)) -->
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -88,6 +101,8 @@
             var currentX = 0;
             var currentY = 0;
             var defaultHexCoordinates = "40,0 120,0 160,70 120,140 40,140 0,70";
+            var pathWidth = 80;
+            var pathHeight = 70;
         </script>
         <script src="manipulate.js" ></script>
         <script src="matrix.js" ></script>
