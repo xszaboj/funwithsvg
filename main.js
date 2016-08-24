@@ -1,6 +1,12 @@
 
 
 //d3.selectAll('polygon').on('mouseenter', moveSelectedElementOnTop());
+function selectHex(evt){
+  var locked = getLocked();
+  if(!locked){
+    selectElement(evt);
+  }
+}
 
 function selectElement(evt) {
   selectedElement = evt.target;
@@ -74,4 +80,8 @@ function getColor(){
 
 function getPathType(){
   return $("#path").val();
+}
+
+function getLocked(){
+  return $("#locked").is(":checked");
 }
