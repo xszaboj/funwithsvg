@@ -36,7 +36,7 @@ function addHex(){
   var hex = document.createElementNS("http://www.w3.org/2000/svg", 'polygon');
   hex.setAttribute("points",defaultHexCoordinates);
   hex.setAttribute("transform","matrix(1 0 0 1 0 0)");
-  hex.setAttribute("onmousedown","selectElement(evt)");
+  hex.setAttribute("onmousedown","selectHex(evt)");
   hex.setAttribute("class","hex");
   hex.setAttribute("class",hex.getAttribute("class") + " " + getColor());
   svg.appendChild(hex);
