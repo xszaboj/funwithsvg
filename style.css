@@ -31,6 +31,12 @@
 .desert{
   fill:url('#desert-bg');
 }
+.village{
+  fill:url('#village-bg');
+}
+.red{
+  fill: red;
+}
 .add{
   float: right;
   height: 35px;
