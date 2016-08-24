@@ -27,7 +27,12 @@
     <pattern id="water-bg" x="0" y="0" height="140" width="160" patternUnits="userSpaceOnUse">
        <image width="160" height="140" xlink:href="./images/water.png"></image>
     </pattern>
+    <filter id = "i1" width = "150%" height = "150%">
+        <feOffset result = "offOut" in = "SourceGraphic" dx = "30" dy = "30"/>
+        <feBlend in = "SourceGraphic" in2 = "offOut" mode = "normal"/>
+    </filter>
   </defs>
+  
 
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 6 424)" onmousedown="selectHex(evt)" class="hex water"></polygon>
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 363 -70)" onmousedown="selectHex(evt)" class="hex water">
@@ -71,9 +76,9 @@
 </svg>
 <div class="controls">
     <div>
-        <lable>Locked:</lable><input type="checkbox" id="locked" />
+        <lable>Locked:</lable><input type="checkbox" id="locked" checked="false" />
         <button id="add" class="add">Add Hex</button>
-        <select id="color" class="choice">
+        <select id="hex-type" class="choice">
         <option value="mountains">mountains</option>
         <option value="clay">clay</option>
         <option value="wheat">wheat</option>
@@ -108,6 +113,7 @@
         <script src="manipulate.js" ></script>
         <script src="matrix.js" ></script>
         <script src="componentHandlers.js" ></script>
+        <script src="components.js" ></script>
         <script src="main.js" ></script>
     </body>
 </html>
