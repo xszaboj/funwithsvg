@@ -80,8 +80,18 @@
 </select>
 <!-- polygon: x0,y0 is top left corner, if= a=80px=1 than r=0.866=70px (r=(1/2)cot(π/6)) -->
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.js" ></script>
+        <script>
+            var svg = document.getElementsByTagName('svg')[0];
+            var selectedElement = 0;
+            var currentX = 0;
+            var currentY = 0;
+            var defaultHexCoordinates = "40,0 120,0 160,70 120,140 40,140 0,70";
+        </script>
+        <script src="manipulate.js" ></script>
+        <script src="matrix.js" ></script>
+        <script src="componentHandlers.js" ></script>
         <script src="main.js" ></script>
     </body>
 </html>
