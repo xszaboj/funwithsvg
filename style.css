@@ -51,3 +51,9 @@ svg{
 line:hover{
   stroke-opacity: 1;
 }
+.blurred {
+    filter      : url(#css_blur);
+    font-family : sans-serif;
+    font-size   : 70px;
+    fill        : red;
+}

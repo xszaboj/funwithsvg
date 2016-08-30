@@ -30,6 +30,9 @@
     <pattern id="village-bg" x="0" y="0" height="50" width="38" patternUnits="userSpaceOnUse">
        <image width="38" height="50" xlink:href="./images/house.png"></image>
     </pattern>
+    <filter id="css_blur">
+        <feGaussianBlur stdDeviation="10"/>
+    </filter>
   </defs>
   
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 6 424)" onmousedown="selectHex(evt)" class="hex water"></polygon>
@@ -71,7 +74,7 @@
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 252 704)" onmousedown="selectHex(evt)" class="hex water"></polygon>
     <polygon points="40,0 120,0 160,70 120,140 40,140 0,70" transform="matrix(1 0 0 1 724 281)" onmousedown="selectHex(evt)" class="hex water"></polygon>
     <rect id="trash" x="850" y="50" width="50" height="50" stroke="black" fill="black" />
-    <rect width="38" height="50" transform="matrix(1 0 0 1 0 0)" onmousedown="selectElement(evt)" class="village" />
+    <image x="0" y="20" width="38" height="50" xlink:href="./images/house.png" class="blurred"></image>
 </svg>
 <div class="controls">
     <div>
