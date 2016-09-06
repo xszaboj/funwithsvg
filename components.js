@@ -19,6 +19,17 @@ function createLine(type){
   d3.select(line).on('mouseenter', moveSelectedElementOnTop());
 }
 
+function createVillage(){
+  var village = document.createElementNS("http://www.w3.org/2000/svg", 'rect');
+  village.setAttribute("transform","matrix(1 0 0 1 0 0)");
+  village.setAttribute("onmousedown","selectElement(evt)");
+  village.setAttribute("class","house");
+  village.setAttribute("width", "38");
+  village.setAttribute("height", "50");
+  svg.appendChild(village);
+  d3.select(village).on('mouseenter', moveSelectedElementOnTop());
+}
+
 function setLineCoordinatesByType(line, type){
   switch(type){
         case "horizontal":
@@ -46,4 +57,16 @@ function getHexType(){
 
 function getPathType(){
   return $("#path").val();
+}
+
+function throwDice(){
+  return getRandomInt(2, 12);
+}
+
+/**
+ * Returns a random integer between min (inclusive) and max (inclusive)
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }

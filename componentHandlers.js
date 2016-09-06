@@ -15,3 +15,12 @@ $("#locked").click(function(){
         d3.selectAll('polygon').on('mouseenter', null);
     }
 });
+
+$("#add-village").click(function(){
+    createVillage();
+})
+
+$("#dice").click(function(){
+    var result = throwDice();
+    $("#dice-result").text(result);
+})
