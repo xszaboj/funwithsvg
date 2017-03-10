@@ -69,16 +69,18 @@ line:hover{
 
 .card {
   display: inline-block;
-  height: 330px;
-  width: 228px;
-  border-radius: 6px 6px 6px 6px;
-  box-shadow: 0px 0px 1px 2px gray;
+  height: 245px;
+  width: 155px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 1px 2px grey;
   background-repeat: no-repeat;
   background-position-x: 10px;
   background-position-y: 10px;
   margin-bottom: 50px;
   left: 50px;
   top: 50px;
+  background-image: url(./images/osadnici-z-katanu.jpg);
+  position: relative;
 }
 .card-image {
   width: 100%;
@@ -86,6 +88,69 @@ line:hover{
   overflow: hidden;
   border-radius: 6px 6px 0px 0px;
 }
-.ore-card{
-  background-image: url('./images/ore-card.png');
+.ore-card{  
+  background-position-x: 0px;
+  background-position-y: -28px;
+}
+.brick-card{
+  background-position-x: -162px;
+  background-position-y: -28px;
+}
+.wood-card{
+  background-position-x: -324px;
+  background-position-y: -28px;
+}
+.sheep-card{
+  background-position-x: -485px;
+  background-position-y: -28px;
+}
+.wheat-card{
+  background-position-x: -645px;
+  background-position-y: -28px;
+}
+.point-card{
+  background-position-x: 0px;
+  background-position-y: -275px;
+}
+.knight-card{
+  background-position-x: -162px;
+  background-position-y: -525px;
+}
+.discovery-card{
+  background-position-x: -324px;
+  background-position-y: -525px;
+}
+.road-card{
+  background-position-x: -485px;
+  background-position-y: -525px;
+}
+.monopol-card{
+  background-position-x: -645px;
+  background-position-y: -525px;
+}
+.plus{
+  position: absolute;
+  top: 107px;
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(37, 162, 47);
+  background-color: #e4dada;
+}
+.minus{
+  position: absolute;
+  top: 107px;
+  right: 3px;
+  font-size: larger;
+  font-weight: bold;
+  color: red;
+  background-color: #e4dada;
+}
+.number{
+  position: absolute;
+  top: 107px;
+  left: 70px;
+  font-size: larger;
+  font-weight: bold;
+  color:black;
+  background-color: #e4dada;
 }
