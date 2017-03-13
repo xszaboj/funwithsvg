@@ -8,6 +8,6 @@
     },
     "files": [
         "./src/require-config.ts",
-        "./src/hello.ts"
+        "./src/game.ts"
     ]
 }

@@ -107,35 +107,17 @@
     </div>
 </div>
 <div>
-    <div class="cards">
-        <div class="card brick-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card ore-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card wheat-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card wood-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card sheep-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card point-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card knight-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card discovery-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card road-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
-        <div class="card monopol-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
+    <div class="cards" data-bind="template: { name: 'card-template', foreach: cards}">
     </div>
 </div>
-        <p>
-            Hello from
-            <strong data-bind="text: language">todo</strong>
-            and
-            <strong data-bind="text: framework">todo</strong>!
-        </p>
-
-        <p>Language: <input data-bind="value: language" /></p>
-        <p>Framework: <input data-bind="value: framework" /></p>
-
-        <script src="./externals/require.js"></script>
-        <script src="./built/require-config.js"></script>
-        <script>
-            require(["built/hello"]);
-        </script>
-<!-- polygon: x0,y0 is top left corner, if= a=80px=1 than r=0.866=70px (r=(1/2)cot(π/6)) -->
+<script type="text/html" id="card-template">
+    <div class="card" data-bind="css: cardName">
+        <span class="plus" data-bind="click: plus">+</span>
+        <span class="number" data-bind="text: value"></span>
+        <span class="minus" data-bind="click: minus">-</span>
+    </div>
+</script>        
+        <!-- polygon: x0,y0 is top left corner, if= a=80px=1 than r=0.866=70px (r=(1/2)cot(π/6)) -->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.js" ></script>
         <script>
@@ -152,5 +134,10 @@
         <script src="componentHandlers.js" ></script>
         <script src="components.js" ></script>
         <script src="main.js" ></script>
+        <script src="./externals/require.js"></script>
+        <script src="./built/require-config.js"></script>
+        <script>
+            require(["built/game"]);
+        </script>
     </body>
 </html>
