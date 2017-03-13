@@ -1,0 +1,23 @@
+{
+  "name": "funwithsvg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@types/knockout": "^3.4.40"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xszaboj/funwithsvg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xszaboj/funwithsvg/issues"
+  },
+  "homepage": "https://github.com/xszaboj/funwithsvg#readme"
+}

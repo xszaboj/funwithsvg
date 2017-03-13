@@ -120,6 +120,21 @@
         <div class="card monopol-card"><span class="plus">+</span><span class="number">0</span><span class="minus">-</span></div>
     </div>
 </div>
+        <p>
+            Hello from
+            <strong data-bind="text: language">todo</strong>
+            and
+            <strong data-bind="text: framework">todo</strong>!
+        </p>
+
+        <p>Language: <input data-bind="value: language" /></p>
+        <p>Framework: <input data-bind="value: framework" /></p>
+
+        <script src="./externals/require.js"></script>
+        <script src="./built/require-config.js"></script>
+        <script>
+            require(["built/hello"]);
+        </script>
 <!-- polygon: x0,y0 is top left corner, if= a=80px=1 than r=0.866=70px (r=(1/2)cot(π/6)) -->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.js" ></script>
